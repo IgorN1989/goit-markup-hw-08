@@ -1,0 +1,29 @@
+%logo {
+  color: var(--accent-color);
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+}
+
+.header__logo {
+  @extend %logo;
+  display: inline-block;
+  margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+
+  .header__logo--black {
+    color: var(--primary-black-color);
+  }
+}
+
+.footer__logo {
+  @extend %logo;
+  display: inline-block;
+  margin-bottom: 20px;
+
+  .footer__logo--white {
+    color: var(--primary-white-color);
+  }
+}

@@ -1,0 +1,27 @@
+.specifications__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.specifications__item {
+    width: 370px;
+    position: relative;
+}
+
+.specifications__title {
+    position: absolute;
+    bottom: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+
+    font-weight: 700;
+    line-height: calc(16 / 14);
+    text-transform: uppercase;
+    color: var(--primary-white-color);
+    background-color: rgba(47, 48, 58, 0.8);
+}

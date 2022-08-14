@@ -1,0 +1,29 @@
+.address__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.address__geotag {
+  color: var(--primary-white-color);
+  line-height: calc(24 / 14);
+  font-style: normal;
+
+  transition: color var(--primary-transition);
+  
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.address__link {
+  color: var(--footer-contacts-color);
+  line-height: calc(24 / 14);
+  font-style: normal;
+
+  transition: color var(--primary-transition);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}

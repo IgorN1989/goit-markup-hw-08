@@ -1,0 +1,39 @@
+.menu-button {
+  @extend %button;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.menu-button__icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  fill: var(--primary-black-color);
+  transition: fill var(--primary-transition);
+
+  .menu-button:hover &,
+  .menu-button:focus & {
+    fill: var(--accent-color);
+  }
+
+  &--cross {
+    opacity: 0;
+    transition: opacity var(--primary-transition);
+  }
+
+  .is-open &--cross {
+    opacity: 1;
+  }
+
+  &--menu {
+    opacity: 1;
+    transition: opacity var(--primary-transition);
+  }
+
+  .is-open &--menu {
+    opacity: 0;
+  }
+}

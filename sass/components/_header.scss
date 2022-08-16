@@ -1,4 +1,5 @@
 .header {
+    position: relative;
     margin-right: auto;
     margin-left: auto;
     border-bottom: 1px solid #ececec;
@@ -6,6 +7,24 @@
 
 .header__container {
     display: flex;
+    justify-content: space-between;
     align-items: center;
 }
+
+.header__menu {
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    height: 796px;
+    background-color: tomato;
+    transition: opacity var(--primary-transition);
+
+    &.is-open {
+        opacity: 1;
+    }
+}
+
+
 

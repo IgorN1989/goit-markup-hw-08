@@ -65,6 +65,7 @@ p {
 
 img {
   display: block;
+  max-width: 100%;
 }
 
 .container {
@@ -72,6 +73,7 @@ img {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+  outline: 1px solid green;
 }
 @media screen and (min-width: 480px) {
   .container {
@@ -92,6 +94,7 @@ img {
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
+  outline: 1px solid red;
 }
 @media screen and (min-width: 1200px) {
   .section {
@@ -154,9 +157,11 @@ img {
   background-color: var(--order-button-color);
 }
 
-.order-button {
-  padding-right: 32px;
-  padding-left: 32px;
+@media screen and (min-width: 1200px) {
+  .order-button {
+    padding-right: 32px;
+    padding-left: 32px;
+  }
 }
 
 .close-button {
@@ -342,12 +347,6 @@ img {
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .features {
-    padding-bottom: 0;
-  }
-}
-
 .features__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -410,6 +409,7 @@ img {
 @media screen and (min-width: 1200px) {
   .specifications {
     display: block;
+    padding-top: 0;
   }
 }
 
@@ -462,15 +462,30 @@ img {
 }
 
 .teammate {
-  width: 270px;
+  max-width: 450px;
   background: var(--primary-white-color);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
+@media screen and (min-width: 768px) {
+  .teammate {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .teammate {
+    width: calc((100% - 90px) / 4);
+  }
+}
 .teammate__description {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 24px;
+}
+@media screen and (min-width: 1200px) {
+  .teammate__description {
+    padding-bottom: 30px;
+  }
 }
 .teammate__name, .teammate__position {
   font-size: 16px;

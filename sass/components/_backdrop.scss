@@ -11,6 +11,8 @@
     opacity: 1;
     visibility: visible;
     transition: opacity var(--primary-transition), visibility var(--primary-transition);
+
+    overflow-y: scroll;
 }
 
 .is-hidden {

@@ -7,6 +7,7 @@
 
 .clients__item {
 height: 92px;
+  width: calc((100% - 30px) / 2);
 }
 
 .clients__link {
@@ -14,7 +15,9 @@ height: 92px;
   justify-content: center;
   align-items: center;
 
-  width: 210px;
+  width:100%;
+
+
 
   @media screen and (min-width: 768px) {
     width: 226px;

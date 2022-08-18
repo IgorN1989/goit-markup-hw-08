@@ -1,11 +1,12 @@
 .header {
+  position: relative;
   margin-right: auto;
   margin-left: auto;
   border-bottom: 1px solid #ececec;
 }
 
 .header__container {
-  position: relative;
+  // position: relative;
   display: flex;
   align-items: center;
 }

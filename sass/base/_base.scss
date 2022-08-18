@@ -1,15 +1,17 @@
 body {
-    color: var(--primary-text-color);
-    background-color: var(--primary-white-color);
-    font-family: var(--main-font);
-    font-size: 14px;
-    letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+  background-color: var(--primary-white-color);
+  font-family: var(--main-font);
+  font-size: 14px;
+  letter-spacing: 0.03em;
 
-    &.menu-open {
-        overflow: hidden;
+  &.menu-open {
+    @media screen and (max-width: 767px) {
+      overflow: hidden;
     }
+  }
 }
 
 .no-scroll {
-    overflow: hidden;
+  overflow: hidden;
 }

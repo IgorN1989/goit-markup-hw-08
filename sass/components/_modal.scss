@@ -4,7 +4,7 @@
   left: 50%;
   
   width: 100%;
-  width: 450px;
+  max-width: 450px;
   min-height: 581px;
   padding: 40px;
 
@@ -23,6 +23,6 @@
   }
 
   @media screen and (min-width: 1200px) {
-    width: 528px;
+    max-width: 528px;
   }
 }

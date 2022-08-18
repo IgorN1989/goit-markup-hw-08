@@ -36,8 +36,10 @@ body {
   font-size: 14px;
   letter-spacing: 0.03em;
 }
-body.menu-open {
-  overflow: hidden;
+@media screen and (max-width: 767px) {
+  body.menu-open {
+    overflow: hidden;
+  }
 }
 
 .no-scroll {
@@ -316,12 +318,12 @@ img {
     height: 100vh;
     max-height: 796px;
     position: absolute;
-    top: -796px;
+    top: 0;
     left: 0;
     opacity: 0;
     visibility: hidden;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    -webkit-transform: translateY(-796px);
+            transform: translateY(-796px);
     -webkit-transition: opacity var(--primary-transition), visibility var(--primary-transition), -webkit-transform var(--primary-transition);
     transition: opacity var(--primary-transition), visibility var(--primary-transition), -webkit-transform var(--primary-transition);
     transition: opacity var(--primary-transition), visibility var(--primary-transition), transform var(--primary-transition);
@@ -334,8 +336,8 @@ img {
   .header__menu.is-open {
     opacity: 1;
     visibility: visible;
-    -webkit-transform: translateY(796px);
-            transform: translateY(796px);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
     overflow-y: scroll;
   }
   .header__menu::first-child {
@@ -1165,7 +1167,7 @@ img {
   top: 50%;
   left: 50%;
   width: 100%;
-  width: 450px;
+  max-width: 450px;
   min-height: 581px;
   padding: 40px;
   background-color: var(--primary-white-color);
@@ -1188,7 +1190,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .modal {
-    width: 528px;
+    max-width: 528px;
   }
 }
 

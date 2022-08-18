@@ -304,7 +304,7 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: calc(100% - 30px);
+  width: 100%;
   background-color: var(--primary-white-color);
   overflow-y: scroll;
 }
@@ -1166,7 +1166,7 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 100%;
+  width: 100vw;
   max-width: 450px;
   min-height: 581px;
   padding: 40px;

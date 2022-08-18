@@ -28,41 +28,105 @@
     <!-- Header section -->
     <header class="header">
       <div class="container header__container">
-        <nav class="nav">
-          <a class="header__logo" href="./index.html"
-            >Web<span class="header__logo--black">Studio</span></a
+        <a class="header__logo" href="./index.html"
+          >Web<span class="header__logo--black">Studio</span></a
+        >
+        <button
+          class="menu-button"
+          type="button"
+          aria-expanded="false"
+          aria-controls="header__menu"
+          data-menu-button
+        >
+          <svg
+            class="menu-button__icon"
+            width="40"
+            height="40"
+            aria-label="Перемикач мобільного меню"
           >
-          <ul class="list nav-list">
-            <li class="nav-list__item">
-              <a class="nav-list__link" href="./index.html">Студія</a>
-            </li>
-            <li class="nav-list__item">
-              <a class="nav-list__link nav-list__link--current" href="./portfolio.html"
-                >Портфоліо</a
-              >
-            </li>
-            <li class="nav-list__item"><a class="nav-list__link" href="#">Контакти</a></li>
-          </ul>
-        </nav>
-
-        <ul class="list contacts-list">
-          <li class="contacts-list__item">
-            <a class="contacts-list__link" href="mailto:info@devstudio.com">
-              <svg class="contacts-list__icon" width="16" height="12">
-                <use href="./images/icons/sprite.svg#icon-envelope"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-          <li class="contacts-list__item">
-            <a class="contacts-list__link" href="tel:+380961111111">
-              <svg class="contacts-list__icon" width="10" height="16">
-                <use href="./images/icons/sprite.svg#icon-smartphone"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+            <use class="menu-button__icon--cross" href="./images/icons/sprite.svg#icon-cross"></use>
+            <use class="menu-button__icon--menu" href="./images/icons/sprite.svg#icon-menu"></use>
+          </svg>
+        </button>
+        <div class="header__menu" id="header__menu" data-menu>
+          <nav class="nav">
+            <ul class="list nav-list">
+              <li class="nav-list__item">
+                <a class="nav-list__link" href="./index.html">Студія</a>
+              </li>
+              <li class="nav-list__item">
+                <a class="nav-list__link nav-list__link--current" href="./portfolio.html"
+                  >Портфоліо</a
+                >
+              </li>
+              <li class="nav-list__item"><a class="nav-list__link" href="#">Контакти</a></li>
+            </ul>
+          </nav>
+          <div class="contacts">
+            <ul class="list contacts-list">
+              <li class="contacts-list__item">
+                <a class="contacts-list__tel" href="tel:+380961111111">
+                  <svg class="contacts-list__icon contacts-list__icon--tel" width="10" height="14">
+                    <use href="./images/icons/sprite.svg#icon-smartphone"></use>
+                  </svg>
+                  +38&nbsp096&nbsp111&nbsp11&nbsp11</a
+                >
+              </li>
+              <li class="contacts-list__item">
+                <a class="contacts-list__mail" href="mailto:info@devstudio.com">
+                  <svg class="contacts-list__icon contacts-list__icon--mail" width="14" height="10">
+                    <use href="./images/icons/sprite.svg#icon-envelope"></use>
+                  </svg>
+                  info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="social-contacts">
+            <ul class="social-contacts__list list">
+              <li class="social-contacts__item">
+                <a
+                  class="social-contacts__link link"
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="instagram"
+                  >Instagram</a
+                >
+              </li>
+              <li class="social-contacts__item">
+                <a
+                  class="social-contacts__link link"
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="twitter"
+                  >Twitter</a
+                >
+              </li>
+              <li class="social-contacts__item">
+                <a
+                  class="social-contacts__link link"
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="facebook"
+                  >Facebook</a
+                >
+              </li>
+              <li class="social-contacts__item">
+                <a
+                  class="social-contacts__link link"
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="linkedin"
+                  >LinkedIn</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <!-- Main section -->
@@ -70,7 +134,7 @@
       <section class="section portfolio">
         <h1 class="section__title visually-hidden">Наші роботи</h1>
         <!-- Filter section -->
-        <div class="container filter">
+        <!-- <div class="container filter">
           <ul class="list filter__list">
             <li class="filter__item">
               <button class="button filter__button" type="button">Все</button>
@@ -88,9 +152,9 @@
               <button class="button filter__button" type="button">Маркетинг</button>
             </li>
           </ul>
-        </div>
+        </div> -->
         <!-- Examples section -->
-        <div class="container examples">
+        <!-- <div class="container examples">
           <ul class="list examples__list">
             <li class="examples__item">
               <a class="examples__link" href="#">
@@ -302,13 +366,14 @@
               </a>
             </li>
           </ul>
-        </div>
+        </div> -->
       </section>
     </main>
     <!-- Footer section -->
     <footer class="footer">
       <div class="footer__container container">
         <h2 class="section__title visually-hidden">Зв'язатися з нами</h2>
+
         <div class="footer__address">
           <a class="footer__logo" href="./index.html"
             >Web<span class="footer__logo--white">Studio</span></a
@@ -402,7 +467,7 @@
               required
             />
 
-            <button class="button subscribe__button" type="submit">
+            <button class="subscribe__button" type="submit">
               <span class="subscribe__text">Підписатися</span>
               <svg class="subscribe__icon" width="24" height="24">
                 <use href="./images/icons/sprite.svg#icon-icon-send"></use>
@@ -412,5 +477,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

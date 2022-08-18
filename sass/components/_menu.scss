@@ -27,13 +27,15 @@
       visibility: visible;
       transform: translateY(796px);
     }
+
+    &::first-child {
+      margin-bottom: auto;
+    }
   }
 
   @media screen and (min-width: 768px) {
     justify-content: space-between;
   }
-}
 
-.header__menu::first-child {
-  margin-bottom: auto;
+  overflow-y: scroll;
 }

@@ -303,6 +303,7 @@ img {
   display: flex;
   width: 100%;
   background-color: var(--primary-white-color);
+  overflow-y: scroll;
 }
 @media screen and (max-width: 767px) {
   .header__menu {
@@ -334,6 +335,9 @@ img {
     -webkit-transform: translateY(796px);
             transform: translateY(796px);
   }
+  .header__menu::first-child {
+    margin-bottom: auto;
+  }
 }
 @media screen and (min-width: 768px) {
   .header__menu {
@@ -341,10 +345,6 @@ img {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-}
-
-.header__menu::first-child {
-  margin-bottom: auto;
 }
 
 .nav {

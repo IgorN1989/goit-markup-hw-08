@@ -15,7 +15,7 @@
     line-height: calc(33 / 28);
 
     text-align: center;
-    letter-spacing: 0.03em;
+    // letter-spacing: 0.03em;
 
     color: var(--title-text-color);
 
@@ -26,6 +26,4 @@
       line-height: calc(42 / 36);
     }
   }
-
-  outline: 1px solid red;
 }

@@ -7,6 +7,7 @@
   height: 40px;
   border: none;
   background-color: transparent;
+  z-index: 10;
 
   @media screen and (min-width: 768px) {
     display: none;
@@ -20,8 +21,7 @@
   fill: var(--primary-black-color);
   transition: fill var(--primary-transition);
 
-  .menu-button:hover &,
-  .menu-button:focus & {
+  .menu-button:active & {
     fill: var(--accent-color);
   }
 

@@ -14,16 +14,18 @@
 .header__logo {
   @extend %logo;
   display: inline-block;
-  margin-right: 93px;
+  margin-right: auto;
   padding-top: 16px;
   padding-bottom: 16px;
 
   @media screen and (min-width: 768px) {
+    margin-right: 89px;
     padding-top: 26px;
     padding-bottom: 26px;
   }
 
   @media screen and (min-width: 1200px) {
+    margin-right: 93px;
     padding-top: 24px;
     padding-bottom: 25px;
   }

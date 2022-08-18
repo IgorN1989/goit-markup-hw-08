@@ -1,0 +1,45 @@
+.social-contacts {
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.social-contacts__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.social-contacts__item {
+
+}
+
+.social-contacts__link {
+  display: flex;
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  font-weight: 500;
+  font-size: 18px;
+  line-height: calc(22 / 18);
+  letter-spacing: 0.02em;
+
+  color: var(--accent-color);
+
+.social-contacts__item:not(:last-child) &::after {
+        content: "";
+        display: block;
+        width: 1px;
+        margin-left: 10px;
+        background-color: rgba(33, 33, 33, 0.2);
+    }
+}
+
+// .social-contacts__item:not(:last-child) {
+//   padding-right: 10px;
+//   border-right: 1px solid rgba(33, 33, 33, 0.2);
+// }
+
+// .social-contacts__item:not(:first-child) {
+// padding-left: 10px;
+// }

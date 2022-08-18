@@ -3,7 +3,7 @@
   top: 50%;
   left: 50%;
 
-  width: 528px;
+  width: 450px;
   min-height: 581px;
   padding: 40px;
 
@@ -19,5 +19,9 @@
     perspective: 10px;
     transform: translate(-50%, -50%) scale(0);
     background-color: var(--accent-color);
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 528px;
   }
 }

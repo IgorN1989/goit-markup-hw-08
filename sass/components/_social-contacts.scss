@@ -10,10 +10,6 @@
   gap: 10px;
 }
 
-.social-contacts__item {
-
-}
-
 .social-contacts__link {
   display: flex;
   padding-top: 16px;
@@ -34,12 +30,3 @@
         background-color: rgba(33, 33, 33, 0.2);
     }
 }
-
-// .social-contacts__item:not(:last-child) {
-//   padding-right: 10px;
-//   border-right: 1px solid rgba(33, 33, 33, 0.2);
-// }
-
-// .social-contacts__item:not(:first-child) {
-// padding-left: 10px;
-// }

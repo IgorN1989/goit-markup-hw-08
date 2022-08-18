@@ -1,6 +1,7 @@
 .header__menu {
   display: flex;
   width: 100%;
+  z-index: 9;
 
   background-color: var(--primary-white-color);
 
@@ -13,7 +14,7 @@
     left: 0;
     opacity: 0;
     visibility: hidden;
-    transform: translateY(-796px);
+    transform: translateY(-100%);
     transition: opacity var(--primary-transition), visibility var(--primary-transition),
       transform var(--primary-transition);
 

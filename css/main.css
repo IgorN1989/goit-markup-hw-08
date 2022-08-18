@@ -36,6 +36,9 @@ body {
   font-size: 14px;
   letter-spacing: 0.03em;
 }
+body.menu-open {
+  overflow: hidden;
+}
 
 .no-scroll {
   overflow: hidden;
@@ -334,6 +337,7 @@ img {
     visibility: visible;
     -webkit-transform: translateY(796px);
             transform: translateY(796px);
+    overflow-y: scroll;
   }
   .header__menu::first-child {
     margin-bottom: auto;
@@ -1139,8 +1143,11 @@ img {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 100;
   width: 100%;
   height: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
   visibility: visible;

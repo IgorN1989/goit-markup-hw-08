@@ -26,6 +26,7 @@
       opacity: 1;
       visibility: visible;
       transform: translateY(796px);
+      overflow-y: scroll;
     }
 
     &::first-child {

@@ -4,6 +4,10 @@ body {
     font-family: var(--main-font);
     font-size: 14px;
     letter-spacing: 0.03em;
+
+    &.menu-open {
+        overflow: hidden;
+    }
 }
 
 .no-scroll {

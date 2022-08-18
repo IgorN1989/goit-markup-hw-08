@@ -5,10 +5,10 @@
   width: 232px;
   margin-bottom: 60px;
 
-  // @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     
-  //   margin-right: auto;
-  // }
+    margin-right: auto;
+  }
 }
 
 .address__list {
@@ -16,6 +16,10 @@
   flex-direction: column;
   align-items: center;
   gap: 8px;
+
+  @media screen and (min-width: 1200px) {
+      gap: 9px;
+    }
 }
 
 .address__geotag {

@@ -1,16 +1,30 @@
+.footer__subscribe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 450px;
+  
+
+  // @media screen and (min-width: 768px) {
+  //   position: absolute;
+  //   bottom: 60px;
+  //   left: 166px;
+  // }
+}
+
 .subscribe {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-
 .subscribe__input {
   width: calc(100vw - 30px);
-  // width: 358px;
+  max-width: 450px;
   height: 50px;
   align-items: center;
   padding-left: 16px;
+  padding-right: 16px;
   margin-bottom: 20px;
   // margin-right: 12px;
 

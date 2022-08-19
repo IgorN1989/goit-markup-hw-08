@@ -71,6 +71,7 @@ p {
 img {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 
 .container {
@@ -189,13 +190,13 @@ img {
 }
 
 .header {
-  position: relative;
   margin-right: auto;
   margin-left: auto;
   border-bottom: 1px solid #ececec;
 }
 
 .header__container {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1076,7 +1077,6 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 450px;
   }
 }
 

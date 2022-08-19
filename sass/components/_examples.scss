@@ -6,8 +6,7 @@
 
 .examples__item {
   width: 100%;
-  outline: 1px solid red;
-
+  
   @media screen and (min-width: 768px) {
     width: calc((100% - 30px) / 2);
   }

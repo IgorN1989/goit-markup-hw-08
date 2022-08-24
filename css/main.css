@@ -1210,8 +1210,8 @@ img {
   -webkit-box-pack: left;
       -ms-flex-pack: left;
           justify-content: left;
-  width: 326px;
   gap: 8px;
+  row-gap: 15px;
   padding-bottom: 40px;
 }
 @media screen and (min-width: 768px) {
@@ -1220,15 +1220,6 @@ img {
         -ms-flex-pack: center;
             justify-content: center;
     width: 100%;
-  }
-}
-
-.filter__item:nth-child(n+4) {
-  margin-top: 7px;
-}
-@media screen and (min-width: 768px) {
-  .filter__item:nth-child(n+4) {
-    margin-top: 0;
   }
 }
 
